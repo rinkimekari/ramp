@@ -1,3 +1,5 @@
+mod ramp;
+
 fn main() {
-    println!("Hello, world!");
+    ramp::begin();
 }
