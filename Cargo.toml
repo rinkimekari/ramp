@@ -1,9 +1,14 @@
 [package]
 name = "ramp"
+version = "0.1.0"
 authors = ["Micah Wasmuth"]
 license = "MIT"
-version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/rinkimekari/ramp"
+description = "Rust Assistant Manager for Pacman - A simple and streamlined way to keep track of your packages. Basically a fancy yay wrapper."
+keywords = ["pacman", "yay", "arch", "archlinux", "aur", "package", "manager", "wrapper", "rust"]
 
 [dependencies]
-clap = "4.0.32"
+clap = { version = "4.0.32", features = ["cargo"] }
+ron = "0.8.0"
+serde = { version = "1.0.152", features = ["derive"] }
